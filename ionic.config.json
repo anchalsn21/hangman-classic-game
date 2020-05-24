@@ -1,0 +1,7 @@
+{
+  "name": "Hangman classic game",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
