@@ -23,5 +23,9 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+    this.platform.backButton.subscribeWithPriority(0, () => {
+      console.log("exit")
+      navigator['app'].exitApp();
+      });
   }
 }

@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-toolbar  color="dark">
+    <ion-title color="light">Hangman</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg" [fullscreen]="true">
+
+ 
+       
+        <div id="home">
+          <div  class="title">Hangman</div>
+          <div  class="button anim" (click)="startGame()">
+            Play
+          </div>
+          <div  class="foother">Coded by Anchal Saini</div>
+        </div>
+        
+
+        <div id="result"  class="h">
+          <div  class="title" id="rT"></div>
+          <div  class="body" id="rM"></div>
+          <div  class="button anim"  (click)="startGame()">
+            Try Again?
+          </div>
+        </div>
+
+
+        <div>
+          
+        <!-- <ion-chip  (click)="goBack()"  color="dark">
+        <ion-icon name="videocam"></ion-icon>
+        <ion-label>Back</ion-label>
+        <ion-icon name="help-circle-sharp"></ion-icon>
+      </ion-chip> -->
+       
+       
+        </div>
+
+
+        
+        <ion-card class="card-bg" id="pGame">
+          <div class=""><ion-icon color="danger" size="large" name="heart-sharp"><p>{{livesLeft}}</p>  </ion-icon>     <span>{{livesLeft}}  </span>      </div>
+          <div class="letter" id="letter">
+<!-- <span class="l"></span> -->
+
+          </div>
+          <div id="game">
+
+
+            <img *ngIf="imageNumber==1" src="assets/images/First.png"   alt=""/>
+            <img *ngIf="imageNumber==2" src="assets/images/Second.png"  alt=""/>
+            <img *ngIf="imageNumber==3" src="assets/images/Third.png"   alt=""/>
+            <img *ngIf="imageNumber==4" src="assets/images/Fourth.png"  alt=""/>
+            <img *ngIf="imageNumber==5" src="assets/images/Fifth.png"   alt=""/>
+            <img *ngIf="imageNumber==6" src="assets/images/Hangman.png"   alt=""/>
+            <!-- <div  class="player"> -->
+              <!-- <div  class="playerModel">
+                <div  class="head" id="g4">
+                </div>
+                <div  class="body" id="g5">
+                 
+                </div>
+                <div  class="foot" id="g6">
+                 
+                </div>
+              </div> -->
+            <!-- </div> -->
+            <!-- <div  class="stang3" id="g3"></div>
+            <div  class="stang2" id="g2"></div>
+            <div  class="stang" id="g1"></div>
+            <div  class="ground" id="g0"></div> -->
+          </div>
+        </ion-card>
+         
+         
+          <div
+             class="hintButton text-center"
+             (click)="setShowPopover()"
+            id="hintButton"
+          >
+            <button  class="btn btn-success text-center">Show Hint</button>
+          </div>
+
+         
+
+         <!-- <IonPopover
+        isOpen={this.state.showPopover}
+        cssClass='my-custom-class text-center'
+        onDidDismiss={e => this.setShowPopover(false)}
+      >
+        <p> {this.state.hint}</p>
+      </IonPopover>
+
+      <ion-chip (click)="setShowPopover(true)"" color="dark">
+          <ion-icon name="videocam"></ion-icon>
+          <ion-label>Show Hint</ion-label>
+          <ion-icon name="help-circle-sharp"></ion-icon>
+        </ion-chip> -->
+     
+   
+
+
+
+
+          <div  class="hint" id="hint">
+            <div  class="title"  (click)="hintExit()">
+              Hint
+              <div  class="exit">X</div>
+            </div>
+            <div  class="body" id="hintText()"></div>
+          </div>
+
+
+
+
+          <div id="tastatur">
+            <div id="moveKeybord">
+              <div  class="marg"></div>
+            </div>
+            <div id="keybord"></div>
+          </div>
+        <!-- </div> -->
+      
+
+
+
+
+</ion-content>

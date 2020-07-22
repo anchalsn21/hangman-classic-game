@@ -4,8 +4,9 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
+  display: inline-grid;
 }
 
 #container strong {
@@ -25,3 +26,33 @@
 #container a {
   text-decoration: none;
 }
+
+// ion-content{
+  // --
+//   :host ::ng-deep .bg{
+//   background: url(../../assets/images/wall.png) ;
+//   // 0 0/100% 100% no-repeat;
+
+// }
+
+#container1{
+  text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    transform: translateY(-50%);
+    // display: inline-grid;
+}
+
+ion-content.background{
+  --background: #12181b;//url(../../assets/images/wall.png) no-repeat 52% center/cover;
+}
+
+ion-fab-button{
+  --background:#2e2d2c;
+}
+
+// ion-grid{
+//   --display: inline-block;
+// }
